@@ -1,0 +1,296 @@
+---
+title: "Toney Family Chiropractic | Elevated Chiropractic Care in Kennesaw, GA"
+description: "Premium chiropractic care in Kennesaw, GA focused on precision treatment, restored mobility, and long-term performance."
+permalink: "/"
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/critical.css" />
+    <link rel="stylesheet" href="/assets/css/local.css" />
+{% endblock %}
+
+{% block body %}
+    <div class="sw-page">
+        <header class="sw-topnav">
+            <div class="sw-container sw-topnav-inner">
+                <a class="sw-brand" href="#home" aria-label="Toney Family Chiropractic home">
+                    <img
+                        class="sw-brand-logo"
+                        src="/assets/images/toney-logo-header.jpg"
+                        alt="Toney Family Chiropractic"
+                        width="520"
+                        height="320"
+                        decoding="async"
+                    >
+                </a>
+                <nav class="sw-menu sw-desktop-nav" aria-label="Primary">
+                    <a href="#about">Meet The Doc</a>
+                    <a href="#services">Our Services</a>
+                    <a href="#reviews">What Our Patients Say</a>
+                    <a href="#contact">Contact Us</a>
+                </nav>
+                <a class="sw-btn sw-btn-nav sw-desktop-cta" href="https://toneyfamilychiropractic.janeapp.com/">Book Appointment</a>
+                <details class="sw-mobile-nav">
+                    <summary class="sw-menu-toggle" aria-label="Toggle menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </summary>
+                    <nav class="sw-menu" aria-label="Primary">
+                        <a href="#about">Meet The Doc</a>
+                        <a href="#services">Our Services</a>
+                        <a href="#reviews">What Our Patients Say</a>
+                        <a href="#contact">Contact Us</a>
+                    </nav>
+                    <a class="sw-btn sw-btn-nav" href="https://toneyfamilychiropractic.janeapp.com/">Book Appointment</a>
+                </details>
+            </div>
+        </header>
+
+        <section id="home" class="sw-hero">
+            <div class="sw-container sw-hero-grid">
+                <div class="sw-hero-copy">
+                    <h1 class="sw-display">
+                        Precision Care For How You Move.
+                    </h1>
+                    <p class="sw-subhead">Concierge chiropractic care for families, professionals, and active adults in Kennesaw.</p>
+                    <p class="sw-hero-mini">Precise assessment. Targeted treatment. Lasting results.</p>
+                    <ul class="sw-trust-list" aria-label="Practice highlights">
+                        <li>Licensed Care</li>
+                        <li>Personalized Plans</li>
+                        <li>Same-Week Availability</li>
+                    </ul>
+                    <a class="sw-btn" href="#contact">Book Appointment</a>
+                </div>
+                <div class="sw-hero-media" aria-hidden="true">
+                    <img
+                        src="/assets/images/hero-back-pain.jpg"
+                        alt=""
+                        width="1536"
+                        height="1024"
+                        loading="eager"
+                        decoding="async"
+                    >
+                </div>
+            </div>
+        </section>
+
+        <section class="sw-mission">
+            <div class="sw-container sw-two-col">
+                <div class="sw-stack-title" aria-label="Mission statement">
+                    <span class="sw-kicker">Our Standard</span>
+                    <span class="sw-accent-gold">The Mission.</span>
+                    <span class="sw-accent-gray">The Vision.</span>
+                    <span class="sw-accent-navy">The Value.</span>
+                </div>
+                <div class="sw-copy">
+                    <p>
+                        Exceptional care starts with listening and clinical precision.
+                    </p>
+                    <p>
+                        We relieve pain, restore confident movement, and protect long-term performance.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="sw-profile">
+            <div class="sw-container sw-two-col sw-two-col-image-left">
+                <img
+                    class="sw-photo"
+                    src="{% getUrl '/assets/images/construction.jpg' | resize({ width: 1200, height: 1500 }) | jpeg %}"
+                    alt="Doctor portrait"
+                    width="600"
+                    height="750"
+                    loading="lazy"
+                    decoding="async"
+                >
+                <div class="sw-copy">
+                    <span class="sw-kicker">About The Doctor</span>
+                    <h2 class="sw-section-title">Meet Dr. Toney</h2>
+                    <p>
+                        Growing up in the Chicago area, I always knew I wanted to make a meaningful impact on people’s lives. My parents taught me that what you put into the world is what you receive, and that belief guided me toward a career in healthcare. I chose this path to help hard‑working individuals improve their health, mobility, and overall quality of life.
+
+                        Life University aligned perfectly with my passion for chiropractic care. There, I deepened my understanding of the body’s innate ability to heal when supported with the right conditions and proper alignment.
+                        
+                        At Toney Family Chiropractic, our mission is simple: educate, empower, and heal. Through targeted chiropractic adjustments, we focus not only on relieving pain but on restoring long‑term wellness. When you trust us with your care, you’re choosing a team committed to helping you move, feel, and live better.                      </p>
+                    <p>
+                        Expect clear communication, thoughtful treatment, and a plan built for lasting progress.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="sw-services">
+            <div class="sw-container">
+                <span class="sw-kicker sw-kicker-center">Services</span>
+                <h2 class="sw-center-title">What We Do Best</h2>
+                <p class="sw-center-copy">Core services designed to improve comfort, movement, and function.</p>
+                <article class="sw-detail sw-two-col">
+                    <img
+                        class="sw-card-image"
+                        src="{% getUrl '/assets/images/cabinets.jpg' | resize({ width: 1200, height: 800 }) | jpeg %}"
+                        alt="Consultation paperwork"
+                        width="600"
+                        height="400"
+                        loading="lazy"
+                        decoding="async"
+                    >
+                    <div class="sw-card sw-card-plain">
+                        <h3>Services at <span class="sw-accent-navy">Toney Family Chiropractic</span></h3>
+                        <p class="sw-card-note">We provide:</p>
+                        <ul>
+                            <li>Spinal Adjustments</li>
+                            <li>Extremity Adjustments</li>
+                            <li>Manual Therapy</li>
+                            <li>Postural Correction Exercises</li>
+                            <li>DOT Physicals</li>
+                        </ul>
+                        <p class="sw-disclaimer">Care plans are personalized for each patient.</p>
+                    </div>
+                </article>
+
+                <article class="sw-detail sw-two-col sw-two-col-image-left">
+                    <img
+                        class="sw-card-image"
+                        src="{% getUrl '/assets/images/landing.jpg' | resize({ width: 1200, height: 800 }) | jpeg %}"
+                        alt="Treatment room"
+                        width="600"
+                        height="400"
+                        loading="lazy"
+                        decoding="async"
+                    >
+                    <div class="sw-card sw-card-plain">
+                        <h3>Built Around <span class="sw-accent-navy">Your Goals</span></h3>
+                        <p class="sw-card-note">From pain relief to performance support, treatment is adapted to your lifestyle and recovery priorities.</p>
+                        <p class="sw-disclaimer">Care plans are personalized for each patient.</p>
+                    </div>
+                </article>
+                <div class="sw-center-cta">
+                    <a class="sw-btn" href="#contact">Book Appointment</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="sw-values">
+            <div class="sw-container">
+                <p class="sw-values-line">
+                    <span class="sw-accent-gold">Caring.</span>
+                    <span>Compassionate.</span>
+                    <span>Thorough.</span>
+                    <span class="sw-accent-gold">Knowledgeable.</span>
+                </p>
+            </div>
+        </section>
+
+        <section id="reviews" class="sw-testimonials">
+            <div class="sw-container">
+                <span class="sw-kicker sw-kicker-center">Testimonials</span>
+                <h2 class="sw-center-title">What Our Patients Say</h2>
+                <div class="sw-testimonial-grid">
+                    <article class="sw-testimonial-panel">
+                        <p class="sw-stars" aria-label="5 out of 5 stars">★★★★★</p>
+                        <blockquote>
+                            "Dr. Toney exceeded expectations during my adjustment. I always feel refreshed and
+                            rejuvenated after seeing Dr. Toney."
+                        </blockquote>
+                        <p>Amir</p>
+                    </article>
+                    <article class="sw-testimonial-panel">
+                        <p class="sw-stars" aria-label="5 out of 5 stars">★★★★★</p>
+                        <blockquote>
+                            “I can’t recommend Dr. Toney enough! He is an amazing chiropractor who truly cares about his patients. Professional, knowledgeable, and attentive — I felt a huge difference after my visit. Highly recommend!”
+                        </blockquote>
+                        <p>Junior Etienne</p>
+                    </article>
+                    <article class="sw-testimonial-panel">
+                        <p class="sw-stars" aria-label="5 out of 5 stars">★★★★★</p>
+                        <blockquote>
+                            “I suffered from lower back and shoulder pain.  After a few sessions with Dr. Toney, the pain was relieved and mobility was back! He's always available and dependable. I'll definitely be a customer for life!”
+                        </blockquote>
+                        <p>-Louis Cole Jr.</p>
+                    </article> 
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="sw-footer-block">
+            <div class="sw-container sw-footer-grid">
+                <div>
+                    <span class="sw-kicker">Contact</span>
+                    <h2 class="sw-footer-brand"><span class="sw-accent-gold">Toney Family Chiropractic.</span></h2>
+                    <a class="sw-btn" href="mailto:{{ client.email }}">Email Us</a>
+                </div>
+                <div>
+                    <h3>Menu</h3>
+                    <ul class="sw-link-list">
+                        <li><a href="#about">Meet The Doc</a></li>
+                        <li><a href="#services">Our Services</a></li>
+                        <li><a href="#reviews">Patient Reviews</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Social</h3>
+                    <ul class="sw-link-list">
+                        <li><a href="{{ client.socials.facebook }}" target="_blank" rel="noopener">Facebook</a></li>
+                        <li><a href="{{ client.socials.instagram }}" target="_blank" rel="noopener">Instagram</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Contact</h3>
+                    <p>
+                        <a href="tel:{{ client.phoneForTel }}">{{ client.phoneFormatted }}</a><br>
+                        <a href="mailto:{{ client.email }}">{{ client.email }}</a><br>
+                        <a href="{{ client.address.mapLink }}" target="_blank" rel="noopener">
+                            {{ client.address.city }}, {{ client.address.state }}
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script>
+        (() => {
+            const links = Array.from(document.querySelectorAll(".sw-topnav .sw-menu a[href^='#']"));
+            const sections = links
+                .map((link) => document.querySelector(link.getAttribute("href")))
+                .filter(Boolean);
+
+            if (!sections.length) return;
+
+            const setActive = (id) => {
+                links.forEach((link) => {
+                    link.classList.toggle("is-active", link.getAttribute("href") === `#${id}`);
+                });
+            };
+
+            const observer = new IntersectionObserver(
+                (entries) => {
+                    const visible = entries
+                        .filter((entry) => entry.isIntersecting)
+                        .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
+
+                    if (visible?.target?.id) {
+                        setActive(visible.target.id);
+                    }
+                },
+                {
+                    threshold: [0.35, 0.6, 0.9],
+                    rootMargin: "-20% 0px -45% 0px",
+                }
+            );
+
+            sections.forEach((section) => observer.observe(section));
+
+            const mobileNav = document.querySelector(".sw-mobile-nav");
+            if (mobileNav) {
+                links.forEach((link) => {
+                    link.addEventListener("click", () => mobileNav.removeAttribute("open"));
+                });
+            }
+        })();
+    </script>
+{% endblock %}

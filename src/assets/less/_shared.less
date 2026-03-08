@@ -1,0 +1,50 @@
+// Shared LESS mixins/utilities for page-level stylesheets.
+
+@sectionGap: clamp(3rem, 6vw, 4rem);
+
+.section-base() {
+    padding: var(--sectionPadding);
+}
+
+.container-stack(@max: (1280/16rem), @gap: @sectionGap) {
+    width: 100%;
+    max-width: @max;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: @gap;
+}
+
+.content-left(@max: (542/16rem)) {
+    text-align: left;
+    width: 100%;
+    max-width: @max;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.content-center() {
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cover-image() {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.fluid-auto-grid(@min: 18rem, @gap: 1.25rem) {
+    display: grid;
+    gap: @gap;
+    grid-template-columns: repeat(auto-fit, minmax(@min, 1fr));
+}
+

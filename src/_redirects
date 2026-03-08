@@ -1,0 +1,14 @@
+/about /#about 301
+/about/ /#about 301
+/services /#services 301
+/services/ /#services 301
+/reviews /#reviews 301
+/reviews/ /#reviews 301
+/contact /#contact 301
+/contact/ /#contact 301
+/blog /#reviews 301
+/blog/ /#reviews 301
+/project-one /#services 301
+/project-one/ /#services 301
+/project-two /#services 301
+/project-two/ /#services 301
