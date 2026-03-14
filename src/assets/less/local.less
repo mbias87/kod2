@@ -558,6 +558,15 @@
         box-shadow: var(--sw-shadow-soft);
     }
 
+    .sw-spine-image {
+        object-fit: contain;
+        object-position: center;
+        background: #fff;
+        padding: 0.7rem;
+        transform: scale(0.74);
+        transform-origin: center;
+    }
+
     .sw-values {
         border-top: 1px solid rgba(255, 255, 255, 0.2);
         border-bottom: 1px solid rgba(255, 255, 255, 0.2);
@@ -838,11 +847,17 @@
     }
 
     .sw-hero-grid {
-        min-height: 0;
+        min-height: clamp(20rem, 95vw, 28rem);
     }
 
     .sw-hero-media {
-        display: none;
+        display: block;
+        right: 0;
+        width: 100%;
+        opacity: 0.36;
+        animation: none;
+        -webkit-mask-image: linear-gradient(to left, rgba(0, 0, 0, 0.78) 45%, rgba(0, 0, 0, 0.3) 75%, transparent 100%);
+        mask-image: linear-gradient(to left, rgba(0, 0, 0, 0.78) 45%, rgba(0, 0, 0, 0.3) 75%, transparent 100%);
     }
 
     .sw-brand-logo {

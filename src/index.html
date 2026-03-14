@@ -62,7 +62,7 @@ permalink: "/"
                         <li>Personalized Plans</li>
                         <li>Same-Week Availability</li>
                     </ul>
-                    <a class="sw-btn" href="#contact">Book Appointment</a>
+                    <a class="sw-btn" href="https://toneyfamilychiropractic.janeapp.com/">Book Appointment</a>
                 </div>
                 <div class="sw-hero-media" aria-hidden="true">
                     <img
@@ -131,15 +131,24 @@ permalink: "/"
                 <h2 class="sw-center-title">What We Do Best</h2>
                 <p class="sw-center-copy">Core services designed to improve comfort, movement, and function.</p>
                 <article class="sw-detail sw-two-col">
-                    <img
-                        class="sw-card-image"
-                        src="{% getUrl '/assets/images/cabinets.jpg' | resize({ width: 1200, height: 800 }) | jpeg %}"
-                        alt="Consultation paperwork"
-                        width="600"
-                        height="400"
-                        loading="lazy"
-                        decoding="async"
-                    >
+                    
+                <img
+                class="sw-card-image sw-spine-image"
+                src="/assets/images/spine-400.webp"
+                srcset="
+                    /assets/images/spine-400.webp 400w,
+                    /assets/images/spine-800.webp 800w,
+                    /assets/images/spine-1200.webp 1200w,
+                    /assets/images/spine-1600.webp 1600w
+                "
+                sizes="(max-width: 768px) 400px,
+                        (max-width: 1200px) 800px,
+                        1200px"
+                alt="Human spine illustration"
+                width="600"
+                height="400"
+                loading="lazy"
+                decoding="async"/> 
                     <div class="sw-card sw-card-plain">
                         <h3>Services at <span class="sw-accent-navy">Toney Family Chiropractic</span></h3>
                         <p class="sw-card-note">We provide:</p>
@@ -155,15 +164,26 @@ permalink: "/"
                 </article>
 
                 <article class="sw-detail sw-two-col sw-two-col-image-left">
+                 
                     <img
-                        class="sw-card-image"
-                        src="{% getUrl '/assets/images/landing.jpg' | resize({ width: 1200, height: 800 }) | jpeg %}"
-                        alt="Treatment room"
-                        width="600"
-                        height="400"
-                        loading="lazy"
-                        decoding="async"
-                    >
+                    class="sw-card-image sw-spine-image"
+                    src="/assets/images/spine-400.webp"
+                    srcset="
+                        /assets/images/spine-400.webp 400w,
+                        /assets/images/spine-800.webp 800w,
+                        /assets/images/spine-1200.webp 1200w,
+                        /assets/images/spine-1600.webp 1600w
+                    "
+                    sizes="(max-width: 768px) 400px,
+                            (max-width: 1200px) 800px,
+                            1200px"
+                    alt="Human spine illustration"
+                    width="600"
+                    height="400"
+                    loading="lazy"
+                    decoding="async"/> 
+               
+                  
                     <div class="sw-card sw-card-plain">
                         <h3>Built Around <span class="sw-accent-navy">Your Goals</span></h3>
                         <p class="sw-card-note">From pain relief to performance support, treatment is adapted to your lifestyle and recovery priorities.</p>
@@ -171,7 +191,7 @@ permalink: "/"
                     </div>
                 </article>
                 <div class="sw-center-cta">
-                    <a class="sw-btn" href="#contact">Book Appointment</a>
+                    <a class="sw-btn" href="https://toneyfamilychiropractic.janeapp.com/">Book Appointment</a>
                 </div>
             </div>
         </section>
