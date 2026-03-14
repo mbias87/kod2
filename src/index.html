@@ -100,7 +100,7 @@ permalink: "/"
             <div class="sw-container sw-two-col sw-two-col-image-left">
                 <img
                     class="sw-photo"
-                    src="{% getUrl '/assets/images/construction.jpg' | resize({ width: 1200, height: 1500 }) | jpeg %}"
+                    src="{% getUrl '/assets/images/headshot_800x1000.png' %}"
                     alt="Doctor portrait"
                     width="600"
                     height="750"
@@ -220,7 +220,7 @@ permalink: "/"
             <div class="sw-container sw-footer-grid">
                 <div>
                     <span class="sw-kicker">Contact</span>
-                    <h2 class="sw-footer-brand"><span class="sw-accent-gold">Toney Family Chiropractic.</span></h2>
+                    <h2 class="sw-footer-brand"><span class="sw-accent-gold">Toney Family Chiropractic</span></h2>
                     <a class="sw-btn" href="mailto:{{ client.email }}">Email Us</a>
                 </div>
                 <div>
@@ -232,20 +232,21 @@ permalink: "/"
                         <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
-                <div>
+                <!-- <div>
                     <h3>Social</h3>
                     <ul class="sw-link-list">
                         <li><a href="{{ client.socials.facebook }}" target="_blank" rel="noopener">Facebook</a></li>
                         <li><a href="{{ client.socials.instagram }}" target="_blank" rel="noopener">Instagram</a></li>
                     </ul>
-                </div>
+                </div> -->
                 <div>
                     <h3>Contact</h3>
                     <p>
                         <a href="tel:{{ client.phoneForTel }}">{{ client.phoneFormatted }}</a><br>
                         <a href="mailto:{{ client.email }}">{{ client.email }}</a><br>
                         <a href="{{ client.address.mapLink }}" target="_blank" rel="noopener">
-                            {{ client.address.city }}, {{ client.address.state }}
+                            {{ client.address.lineOne }} {{ client.address.lineTwo }}
+                            {{ client.address.city }}, {{ client.address.state }} {{ client.address.zip }}
                         </a>
                     </p>
                 </div>
